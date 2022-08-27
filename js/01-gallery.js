@@ -35,7 +35,7 @@ function onCardImgClick(event){
       console.log(event.target.dataset);
 
       const modalImg = basicLightbox.create(`
-      <img src="${event.target.closest("img").dataset.source}" width="800" height="600">
+      <img src="${event.target.dataset.source}" width="800" height="600">
   `);
   console.log(event.target);
   console.log(modalImg.show());

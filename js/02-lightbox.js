@@ -24,10 +24,12 @@ function onCardImgClick(event){
         return;
       }
       
-      let gallery = new SimpleLightbox('.gallery a');
-      gallery.on("show.simplelightbox", function () {
-       
-      });
+      let gallery = new SimpleLightbox('.gallery a', {
+        captionsData: 'alt',
+        captionPosition: 'bottom',
+        captionDelay: 250,
+      } );
+   
   
 };
 console.log(galleryItems);
