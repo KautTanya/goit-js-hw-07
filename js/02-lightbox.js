@@ -18,17 +18,19 @@ function createGallery(galleryItems){
     })
     .join('');
 }
+
+const gallery = new SimpleLightbox('.gallery a', {
+    captionsData: 'alt',
+    captionPosition: 'bottom',
+    captionDelay: 250,
+  } );
 function onCardImgClick(event){
     event.preventDefault();
     if (!event.target.classList.contains("gallery__image")) {
         return;
       }
       
-      let gallery = new SimpleLightbox('.gallery a', {
-        captionsData: 'alt',
-        captionPosition: 'bottom',
-        captionDelay: 250,
-      } );
+      
    
   
 };
